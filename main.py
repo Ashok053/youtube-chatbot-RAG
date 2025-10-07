@@ -8,9 +8,6 @@ from langchain.vectorstores import FAISS
 from langchain_core.prompts import PromptTemplate
 
 
-#1. indexing and document injestion
-
-
 import yt_dlp
 import json
 
@@ -78,7 +75,7 @@ def create_vector_store(text):
     )
 
     vector_store = FAISS.from_documents(chunks, embeddings)
-    retriever = vector_store.as_retriever(search_type="similarity", search_kwargs={"k": 4})
+    retriever = vector_store.as_retriever(search_type="similarity", search_kwargs={"k": 3})
 
     return retriever
 
@@ -99,8 +96,7 @@ def split_text(text):
 llm = ChatGroq(
     model="meta-llama/llama-4-maverick-17b-128e-instruct",
     temperature=0.2,
-    max_tokens=512,
-    streaming=True
+    max_tokens=512
 )
 
 prompt = PromptTemplate(
