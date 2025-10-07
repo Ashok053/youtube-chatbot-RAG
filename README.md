@@ -42,3 +42,7 @@ streamlit run main.py
 - HuggingFace Embeddings
 - Streamlit UI
 - yt_dlp for YouTube data fetching
+
+
+ ## Demo video 
+ https://github.com/user-attachments/assets/a24beb2f-28d3-4da4-b531-51585667e5d6
