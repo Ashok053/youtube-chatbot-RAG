@@ -1,9 +1,8 @@
-🎥 YouTube Video Chatbot (RAG + Groq + LangChain)
+<h1>🎥 YouTube Video Chatbot (RAG + Groq + LangChain)  </h1> 
 
 This project lets you chat with any YouTube video — just paste the video link, and it extracts the transcript, embeds it into a vector store (FAISS), and answers your questions using Groq’s LLaMA model
 
-
-🚀 Features
+<h4>🚀 Features</h4>
 
 🧩 Extracts subtitles or auto-captions from YouTube
 ✂️ Splits and embeds transcript into vector form using LangChain + FAISS
@@ -13,7 +12,7 @@ This project lets you chat with any YouTube video — just paste the video link,
 
 
 
-🛠️ Tech Stack
+<h4>🛠️ Tech Stack </h4>
 
 LangChain (RAG framework)
 Groq API (LLM inference)
@@ -24,10 +23,10 @@ Streamlit (Frontend UI)
 
 
 
-⚙️ Setup Instructions
+<h4>⚙️ Setup Instructions </h4>
 1️⃣ Clone this repository
-git clone https://github.com/yourusername/youtube-rag-chatbot.git
-cd youtube-rag-chatbot
+git clone https://github.com/yourusername/youtube-rag-chatbot.git <br>
+cd youtube-rag-chatbot <br>
 
 2️⃣ Install dependencies
 pip install -r requirements.txt
