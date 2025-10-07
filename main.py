@@ -130,7 +130,7 @@ def create_main_chain(retriever):
 
 import streamlit as st
 
-st.title("YouTube Video Chatbot 🎥🤖")
+st.title("YouTube Video Chatbot system ")
 
 url = st.text_input("Paste YouTube Video URL:")
 
