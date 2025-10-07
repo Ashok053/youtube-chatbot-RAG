@@ -1,47 +1,44 @@
-<h1>🎥 YouTube Video Chatbot (RAG + Groq + LangChain)  </h1> 
+# 🎬 YouTube Chatbot RAG (Groq + LangChain)
 
-This project lets you chat with any YouTube video — just paste the video link, and it extracts the transcript, embeds it into a vector store (FAISS), and answers your questions using Groq’s LLaMA model
+A **Streamlit-based application** that allows users to **chat with any YouTube video** using Retrieval-Augmented Generation (RAG).  
+Just paste a YouTube link, and the app fetches transcripts, embeds them, and answers questions about the video content.
 
-<h4>🚀 Features</h4>
+---
 
-🧩 Extracts subtitles or auto-captions from YouTube
-✂️ Splits and embeds transcript into vector form using LangChain + FAISS
-🧠 Uses Groq LLM (LLaMA-4 model : meta-llama/llama-4-maverick-17b-128e-instruct ) for lightning-fast reasoning
-💬 Ask any question about the video content
-🪄 Built with Streamlit (UI) + Python (LangChain)
+## 🚀 Features
+- 📥 Automatically fetches and cleans YouTube transcripts  
+- 💡 Splits text into chunks and generates embeddings using `sentence-transformers/all-MiniLM-L6-v2`  
+- 🧠 Stores embeddings in FAISS for vector search  
+- 🤖 Powered by Groq LLM (`meta-llama/llama-4-maverick-17b`) for context-aware answers  
+- 💬 Interactive chat interface built using Streamlit  
+---
 
+## ⚙️ Setup Instructions
 
-
-<h4>🛠️ Tech Stack </h4>
-
-LangChain (RAG framework)
-Groq API (LLM inference)
-FAISS (Vector database)
-HuggingFace Embeddings
-yt_dlp (YouTube transcript extraction)
-Streamlit (Frontend UI)
-
-
-
-<h4>⚙️ Setup Instructions </h4>
-1️⃣ Clone this repository
-git clone https://github.com/yourusername/youtube-rag-chatbot.git <br>
-cd youtube-rag-chatbot <br>
-
-2️⃣ Install dependencies
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/Ashok053/youtube-chatbot-RAG.git
+cd youtube-chatbot-RAG
+````
+### 2️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
-
-3️⃣ Set up your Groq API Key
-Create your free API key at 👉 https://console.groq.com/keys
-Then add it to your environment:
+```
+### 3️⃣ Set Up Your Groq API Key
+Create a free API key from Groq Console: https://console.groq.com/keys
+Then set it as an environment variable:
+```bash
 export GROQ_API_KEY="your_api_key_here"
-
-Or in Windows PowerShell:
-setx GROQ_API_KEY "your_api_key_here"
-
-▶️ Run the Streamlit app
+```
+### Run as 
+```bash
 streamlit run main.py
+```
 
-
-Then open your browser at:
-http://localhost:8501
+## 📦 Tech Stack
+- LangChain
+- FAISS
+- Groq API (Llama-4-Maverick)
+- HuggingFace Embeddings
+- Streamlit UI
+- yt_dlp for YouTube data fetching
